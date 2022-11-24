@@ -135,7 +135,7 @@
             this.label_femaleStd.ForeColor = System.Drawing.Color.White;
             this.label_femaleStd.Location = new System.Drawing.Point(132, 39);
             this.label_femaleStd.Name = "label_femaleStd";
-            this.label_femaleStd.Size = new System.Drawing.Size(70, 20);
+            this.label_femaleStd.Size = new System.Drawing.Size(88, 25);
             this.label_femaleStd.TabIndex = 7;
             this.label_femaleStd.Text = "Female :";
             // 
@@ -146,7 +146,7 @@
             this.label_maleStd.ForeColor = System.Drawing.Color.White;
             this.label_maleStd.Location = new System.Drawing.Point(35, 39);
             this.label_maleStd.Name = "label_maleStd";
-            this.label_maleStd.Size = new System.Drawing.Size(51, 20);
+            this.label_maleStd.Size = new System.Drawing.Size(66, 25);
             this.label_maleStd.TabIndex = 8;
             this.label_maleStd.Text = "Male :";
             // 
@@ -157,7 +157,7 @@
             this.label11.ForeColor = System.Drawing.Color.White;
             this.label11.Location = new System.Drawing.Point(507, 16);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(117, 20);
+            this.label11.Size = new System.Drawing.Size(147, 25);
             this.label11.TabIndex = 6;
             this.label11.Text = "NEED TO FIX :";
             // 
@@ -168,7 +168,7 @@
             this.label_cfemale.ForeColor = System.Drawing.Color.White;
             this.label_cfemale.Location = new System.Drawing.Point(735, 53);
             this.label_cfemale.Name = "label_cfemale";
-            this.label_cfemale.Size = new System.Drawing.Size(70, 20);
+            this.label_cfemale.Size = new System.Drawing.Size(88, 25);
             this.label_cfemale.TabIndex = 4;
             this.label_cfemale.Text = "Female :";
             // 
@@ -179,7 +179,7 @@
             this.label_cmale.ForeColor = System.Drawing.Color.White;
             this.label_cmale.Location = new System.Drawing.Point(629, 53);
             this.label_cmale.Name = "label_cmale";
-            this.label_cmale.Size = new System.Drawing.Size(51, 20);
+            this.label_cmale.Size = new System.Drawing.Size(66, 25);
             this.label_cmale.TabIndex = 5;
             this.label_cmale.Text = "Male :";
             // 
@@ -189,7 +189,7 @@
             this.comboBox_course.FormattingEnabled = true;
             this.comboBox_course.Location = new System.Drawing.Point(624, 12);
             this.comboBox_course.Name = "comboBox_course";
-            this.comboBox_course.Size = new System.Drawing.Size(211, 28);
+            this.comboBox_course.Size = new System.Drawing.Size(211, 33);
             this.comboBox_course.TabIndex = 3;
             this.comboBox_course.SelectedIndexChanged += new System.EventHandler(this.comboBox_course_SelectedIndexChanged);
             // 
@@ -200,7 +200,7 @@
             this.label_totalStd.ForeColor = System.Drawing.Color.White;
             this.label_totalStd.Location = new System.Drawing.Point(35, 13);
             this.label_totalStd.Name = "label_totalStd";
-            this.label_totalStd.Size = new System.Drawing.Size(100, 20);
+            this.label_totalStd.Size = new System.Drawing.Size(127, 25);
             this.label_totalStd.TabIndex = 1;
             this.label_totalStd.Text = "Total Clients:";
             // 
@@ -236,7 +236,7 @@
             this.label_role.ForeColor = System.Drawing.Color.White;
             this.label_role.Location = new System.Drawing.Point(153, 39);
             this.label_role.Name = "label_role";
-            this.label_role.Size = new System.Drawing.Size(54, 20);
+            this.label_role.Size = new System.Drawing.Size(68, 25);
             this.label_role.TabIndex = 3;
             this.label_role.Text = "Admin";
             // 
@@ -246,7 +246,7 @@
             this.label_user.ForeColor = System.Drawing.Color.White;
             this.label_user.Location = new System.Drawing.Point(151, 13);
             this.label_user.Name = "label_user";
-            this.label_user.Size = new System.Drawing.Size(75, 20);
+            this.label_user.Size = new System.Drawing.Size(95, 25);
             this.label_user.TabIndex = 2;
             this.label_user.Text = "MegaFox";
             // 
@@ -256,7 +256,7 @@
             this.label5.ForeColor = System.Drawing.Color.White;
             this.label5.Location = new System.Drawing.Point(104, 39);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(50, 20);
+            this.label5.Size = new System.Drawing.Size(62, 25);
             this.label5.TabIndex = 1;
             this.label5.Text = "Role :";
             // 
@@ -266,7 +266,7 @@
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(35, 13);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(119, 20);
+            this.label1.Size = new System.Drawing.Size(149, 25);
             this.label1.TabIndex = 0;
             this.label1.Text = "Welcome Back,";
             // 
@@ -286,7 +286,7 @@
             this.label12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.label12.Location = new System.Drawing.Point(8, 24);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(266, 20);
+            this.label12.Size = new System.Drawing.Size(325, 25);
             this.label12.TabIndex = 0;
             this.label12.Text = "MegaFox - Management System";
             // 
@@ -321,7 +321,7 @@
             this.button_exit.Margin = new System.Windows.Forms.Padding(5);
             this.button_exit.Name = "button_exit";
             this.button_exit.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.button_exit.Size = new System.Drawing.Size(183, 55);
+            this.button_exit.Size = new System.Drawing.Size(179, 55);
             this.button_exit.TabIndex = 8;
             this.button_exit.Text = "Exit";
             this.button_exit.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -339,7 +339,7 @@
             this.button_dashboard.Margin = new System.Windows.Forms.Padding(5);
             this.button_dashboard.Name = "button_dashboard";
             this.button_dashboard.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.button_dashboard.Size = new System.Drawing.Size(183, 55);
+            this.button_dashboard.Size = new System.Drawing.Size(179, 55);
             this.button_dashboard.TabIndex = 7;
             this.button_dashboard.Text = "Dashboard";
             this.button_dashboard.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -354,7 +354,7 @@
             this.panel_scoreSubmenu.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel_scoreSubmenu.Location = new System.Drawing.Point(0, 509);
             this.panel_scoreSubmenu.Name = "panel_scoreSubmenu";
-            this.panel_scoreSubmenu.Size = new System.Drawing.Size(183, 99);
+            this.panel_scoreSubmenu.Size = new System.Drawing.Size(179, 99);
             this.panel_scoreSubmenu.TabIndex = 6;
             // 
             // button_manageScore
@@ -367,9 +367,9 @@
             this.button_manageScore.Location = new System.Drawing.Point(0, 50);
             this.button_manageScore.Name = "button_manageScore";
             this.button_manageScore.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.button_manageScore.Size = new System.Drawing.Size(183, 50);
+            this.button_manageScore.Size = new System.Drawing.Size(179, 50);
             this.button_manageScore.TabIndex = 1;
-            this.button_manageScore.Text = "Manage Score";
+            this.button_manageScore.Text = "Manage User";
             this.button_manageScore.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button_manageScore.UseVisualStyleBackColor = false;
             // 
@@ -383,11 +383,12 @@
             this.button_newScore.Location = new System.Drawing.Point(0, 0);
             this.button_newScore.Name = "button_newScore";
             this.button_newScore.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.button_newScore.Size = new System.Drawing.Size(183, 50);
+            this.button_newScore.Size = new System.Drawing.Size(179, 50);
             this.button_newScore.TabIndex = 0;
-            this.button_newScore.Text = "Create Invoice";
+            this.button_newScore.Text = "Create User";
             this.button_newScore.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button_newScore.UseVisualStyleBackColor = false;
+            this.button_newScore.Click += new System.EventHandler(this.button_newScore_Click);
             // 
             // button_score
             // 
@@ -400,9 +401,9 @@
             this.button_score.Margin = new System.Windows.Forms.Padding(5);
             this.button_score.Name = "button_score";
             this.button_score.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.button_score.Size = new System.Drawing.Size(183, 55);
+            this.button_score.Size = new System.Drawing.Size(179, 55);
             this.button_score.TabIndex = 5;
-            this.button_score.Text = "Invoices";
+            this.button_score.Text = "User Panel";
             this.button_score.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button_score.UseVisualStyleBackColor = false;
             this.button_score.Click += new System.EventHandler(this.button_score_Click);
@@ -415,7 +416,7 @@
             this.panel_courseSubmenu.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel_courseSubmenu.Location = new System.Drawing.Point(0, 354);
             this.panel_courseSubmenu.Name = "panel_courseSubmenu";
-            this.panel_courseSubmenu.Size = new System.Drawing.Size(183, 100);
+            this.panel_courseSubmenu.Size = new System.Drawing.Size(179, 100);
             this.panel_courseSubmenu.TabIndex = 4;
             // 
             // button_manageCourse
@@ -428,7 +429,7 @@
             this.button_manageCourse.Location = new System.Drawing.Point(0, 50);
             this.button_manageCourse.Name = "button_manageCourse";
             this.button_manageCourse.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.button_manageCourse.Size = new System.Drawing.Size(183, 50);
+            this.button_manageCourse.Size = new System.Drawing.Size(179, 50);
             this.button_manageCourse.TabIndex = 1;
             this.button_manageCourse.Text = "Manage Inventory";
             this.button_manageCourse.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -444,7 +445,7 @@
             this.button_newInventory.Location = new System.Drawing.Point(0, 0);
             this.button_newInventory.Name = "button_newInventory";
             this.button_newInventory.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.button_newInventory.Size = new System.Drawing.Size(183, 50);
+            this.button_newInventory.Size = new System.Drawing.Size(179, 50);
             this.button_newInventory.TabIndex = 0;
             this.button_newInventory.Text = "New Inventory";
             this.button_newInventory.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -462,7 +463,7 @@
             this.button_course.Margin = new System.Windows.Forms.Padding(5);
             this.button_course.Name = "button_course";
             this.button_course.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.button_course.Size = new System.Drawing.Size(183, 55);
+            this.button_course.Size = new System.Drawing.Size(179, 55);
             this.button_course.TabIndex = 3;
             this.button_course.Text = "Inventory";
             this.button_course.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -477,7 +478,7 @@
             this.panel_stdsubmenu.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel_stdsubmenu.Location = new System.Drawing.Point(0, 196);
             this.panel_stdsubmenu.Name = "panel_stdsubmenu";
-            this.panel_stdsubmenu.Size = new System.Drawing.Size(183, 103);
+            this.panel_stdsubmenu.Size = new System.Drawing.Size(179, 103);
             this.panel_stdsubmenu.TabIndex = 2;
             // 
             // button_manageClient
@@ -490,7 +491,7 @@
             this.button_manageClient.Location = new System.Drawing.Point(0, 50);
             this.button_manageClient.Name = "button_manageClient";
             this.button_manageClient.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.button_manageClient.Size = new System.Drawing.Size(183, 50);
+            this.button_manageClient.Size = new System.Drawing.Size(179, 50);
             this.button_manageClient.TabIndex = 1;
             this.button_manageClient.Text = "Manage Customer";
             this.button_manageClient.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -507,7 +508,7 @@
             this.button_registration.Location = new System.Drawing.Point(0, 0);
             this.button_registration.Name = "button_registration";
             this.button_registration.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.button_registration.Size = new System.Drawing.Size(183, 50);
+            this.button_registration.Size = new System.Drawing.Size(179, 50);
             this.button_registration.TabIndex = 0;
             this.button_registration.Text = "Registration";
             this.button_registration.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -525,7 +526,7 @@
             this.button_client.Margin = new System.Windows.Forms.Padding(5);
             this.button_client.Name = "button_client";
             this.button_client.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.button_client.Size = new System.Drawing.Size(183, 55);
+            this.button_client.Size = new System.Drawing.Size(179, 55);
             this.button_client.TabIndex = 1;
             this.button_client.Text = "Customers";
             this.button_client.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -540,7 +541,7 @@
             this.panel_logo.Location = new System.Drawing.Point(0, 0);
             this.panel_logo.Margin = new System.Windows.Forms.Padding(5);
             this.panel_logo.Name = "panel_logo";
-            this.panel_logo.Size = new System.Drawing.Size(183, 141);
+            this.panel_logo.Size = new System.Drawing.Size(179, 141);
             this.panel_logo.TabIndex = 0;
             // 
             // panel4
@@ -554,7 +555,7 @@
             // 
             // frmMain
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1098, 559);
             this.Controls.Add(this.panel_main);

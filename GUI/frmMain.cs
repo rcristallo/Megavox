@@ -115,5 +115,10 @@ namespace MegaVox.GUI
         {
             openChildForm(new frmInventory());
         }
+
+        private void button_newScore_Click(object sender, EventArgs e)
+        {
+            openChildForm(new frmCreateUser());
+        }
     }
 }
