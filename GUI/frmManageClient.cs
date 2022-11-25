@@ -34,7 +34,7 @@ namespace MegaVox.GUI
             imageColumn.ImageLayout = DataGridViewImageCellLayout.Zoom;
         }
 
-        private void DataGridView_client_Click(object sender, EventArgs e)
+        private void DataGridView_client_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             txtId.Text = DataGridView_client.CurrentRow.Cells[0].Value.ToString();
             txtFirstName.Text = DataGridView_client.CurrentRow.Cells[1].Value.ToString();
@@ -49,18 +49,6 @@ namespace MegaVox.GUI
             byte[] img = (byte[])DataGridView_client.CurrentRow.Cells[7].Value;
             MemoryStream ms = new MemoryStream(img);
             imgClient.Image = Image.FromStream(ms);
-        }
-
-        private void button_clear_Click(object sender, EventArgs e)
-        {
-            txtId.Clear();
-            txtFirstName.Clear();
-            txtLastName.Clear();
-            txtPhone.Clear();
-            txtAddress.Clear();
-            radioButton_male.Checked = true;
-            datePicker.Value = DateTime.Now;
-            imgClient.Image = null;
         }
 
         private void button_upload_Click(object sender, EventArgs e)
@@ -87,6 +75,18 @@ namespace MegaVox.GUI
         private void frmManageClient_Load(object sender, EventArgs e)
         {
             showTable();
+        }
+
+        private void button_clear_Click(object sender, EventArgs e)
+        {
+            txtId.Clear();
+            txtFirstName.Clear();
+            txtLastName.Clear();
+            txtPhone.Clear();
+            txtAddress.Clear();
+            radioButton_male.Checked = true;
+            datePicker.Value = DateTime.Now;
+            imgClient.Image = null;
         }
 
         private void button_update_Click(object sender, EventArgs e)
@@ -130,8 +130,14 @@ namespace MegaVox.GUI
             {
                 MessageBox.Show("Empty Field", "Update Client", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
+        }
 
-
+        private void button_search_Click(object sender, EventArgs e)
+        {
+            DataGridView_client.DataSource = client.searchClient(txtSearch.Text);
+            DataGridViewImageColumn imageColumn = new DataGridViewImageColumn();
+            imageColumn = (DataGridViewImageColumn)DataGridView_client.Columns[7];
+            imageColumn.ImageLayout = DataGridViewImageCellLayout.Zoom;
         }
 
         private void button_delete_Click(object sender, EventArgs e)
@@ -146,14 +152,6 @@ namespace MegaVox.GUI
                     button_clear.PerformClick();
                 }
             }
-        }
-
-        private void button_search_Click(object sender, EventArgs e)
-        {
-            DataGridView_client.DataSource = client.searchClient(txtSearch.Text);
-            DataGridViewImageColumn imageColumn = new DataGridViewImageColumn();
-            imageColumn = (DataGridViewImageColumn)DataGridView_client.Columns[7];
-            imageColumn.ImageLayout = DataGridViewImageCellLayout.Zoom;
         }
     }
 }

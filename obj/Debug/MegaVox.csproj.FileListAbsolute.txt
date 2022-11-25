@@ -208,3 +208,4 @@ C:\Users\Donato\Documents\GitHub\Megavox\obj\Debug\MegaVox.csproj.CoreCompileInp
 C:\Users\Donato\Documents\GitHub\Megavox\obj\Debug\MegaVox.csproj.CopyComplete
 C:\Users\Donato\Documents\GitHub\Megavox\obj\Debug\MegaVox.exe
 C:\Users\Donato\Documents\GitHub\Megavox\obj\Debug\MegaVox.pdb
+C:\Users\raffa\Desktop\MegaVox\MegaVox\obj\Debug\MegaVox.csproj.SuggestedBindingRedirects.cache
