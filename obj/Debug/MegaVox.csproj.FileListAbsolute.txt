@@ -148,7 +148,6 @@ C:\Users\raffa\Desktop\MegaVox\MegaVox\bin\Debug\System.Numerics.Vectors.xml
 C:\Users\raffa\Desktop\MegaVox\MegaVox\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 C:\Users\raffa\Desktop\MegaVox\MegaVox\bin\Debug\System.Threading.Tasks.Extensions.xml
 C:\Users\raffa\Desktop\MegaVox\MegaVox\obj\Debug\MegaVox.csproj.AssemblyReference.cache
-C:\Users\raffa\Desktop\MegaVox\MegaVox\obj\Debug\MegaVox.csproj.SuggestedBindingRedirects.cache
 C:\Users\raffa\Desktop\MegaVox\MegaVox\obj\Debug\MegaVox.GUI.frmCreateUser.resources
 C:\Users\raffa\Desktop\MegaVox\MegaVox\obj\Debug\MegaVox.GUI.frmInventory.resources
 C:\Users\raffa\Desktop\MegaVox\MegaVox\obj\Debug\MegaVox.GUI.frmLogin.resources
