@@ -77,6 +77,7 @@ namespace MegaVox.GUI
             radioButton_male.Checked = true;
             datePicker.Value = DateTime.Now;
             imgClient.Image = null;
+
         }
 
         private void btnAdd_Click(object sender, EventArgs e)
@@ -121,5 +122,6 @@ namespace MegaVox.GUI
 
 
         }
+
     }
 }
