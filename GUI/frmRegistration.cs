@@ -123,5 +123,24 @@ namespace MegaVox.GUI
 
         }
 
+        private void button_upload_Click_1(object sender, EventArgs e)
+        {
+            OpenFileDialog opf = new OpenFileDialog();
+            opf.Filter = "Select Photo(*.jpg;*.png;*.gif)|*.jpg;*.png;*.gif";
+
+            if (opf.ShowDialog() == DialogResult.OK)
+                imgClient.Image = Image.FromFile(opf.FileName);
+        }
+
+        private void button_clear_Click_1(object sender, EventArgs e)
+        {
+            txtFirstName.Clear();
+            txtLastName.Clear();
+            txtPhone.Clear();
+            txtAddress.Clear();
+            radioButton_male.Checked = true;
+            datePicker.Value = DateTime.Now;
+            imgClient.Image = null;
+        }
     }
 }
