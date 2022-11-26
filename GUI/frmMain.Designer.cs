@@ -52,7 +52,6 @@
             this.button_exit = new System.Windows.Forms.Button();
             this.button_dashboard = new System.Windows.Forms.Button();
             this.panel_scoreSubmenu = new System.Windows.Forms.Panel();
-            this.button_manageScore = new System.Windows.Forms.Button();
             this.button_newScore = new System.Windows.Forms.Button();
             this.button_score = new System.Windows.Forms.Button();
             this.panel_courseSubmenu = new System.Windows.Forms.Panel();
@@ -318,7 +317,7 @@
             this.button_exit.FlatAppearance.BorderSize = 0;
             this.button_exit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_exit.ForeColor = System.Drawing.Color.White;
-            this.button_exit.Location = new System.Drawing.Point(0, 673);
+            this.button_exit.Location = new System.Drawing.Point(0, 619);
             this.button_exit.Margin = new System.Windows.Forms.Padding(5);
             this.button_exit.Name = "button_exit";
             this.button_exit.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
@@ -336,7 +335,7 @@
             this.button_dashboard.FlatAppearance.BorderSize = 0;
             this.button_dashboard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_dashboard.ForeColor = System.Drawing.Color.White;
-            this.button_dashboard.Location = new System.Drawing.Point(0, 608);
+            this.button_dashboard.Location = new System.Drawing.Point(0, 554);
             this.button_dashboard.Margin = new System.Windows.Forms.Padding(5);
             this.button_dashboard.Name = "button_dashboard";
             this.button_dashboard.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
@@ -349,30 +348,13 @@
             // 
             // panel_scoreSubmenu
             // 
-            this.panel_scoreSubmenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.panel_scoreSubmenu.Controls.Add(this.button_manageScore);
+            this.panel_scoreSubmenu.BackColor = System.Drawing.Color.Black;
             this.panel_scoreSubmenu.Controls.Add(this.button_newScore);
             this.panel_scoreSubmenu.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel_scoreSubmenu.Location = new System.Drawing.Point(0, 509);
             this.panel_scoreSubmenu.Name = "panel_scoreSubmenu";
-            this.panel_scoreSubmenu.Size = new System.Drawing.Size(179, 99);
+            this.panel_scoreSubmenu.Size = new System.Drawing.Size(179, 45);
             this.panel_scoreSubmenu.TabIndex = 6;
-            // 
-            // button_manageScore
-            // 
-            this.button_manageScore.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(86)))), ((int)(((byte)(90)))));
-            this.button_manageScore.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button_manageScore.FlatAppearance.BorderSize = 0;
-            this.button_manageScore.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_manageScore.ForeColor = System.Drawing.Color.White;
-            this.button_manageScore.Location = new System.Drawing.Point(0, 50);
-            this.button_manageScore.Name = "button_manageScore";
-            this.button_manageScore.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.button_manageScore.Size = new System.Drawing.Size(179, 50);
-            this.button_manageScore.TabIndex = 1;
-            this.button_manageScore.Text = "Manage User";
-            this.button_manageScore.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button_manageScore.UseVisualStyleBackColor = false;
             // 
             // button_newScore
             // 
@@ -606,7 +588,6 @@
         private System.Windows.Forms.Button button_exit;
         private System.Windows.Forms.Button button_dashboard;
         private System.Windows.Forms.Panel panel_scoreSubmenu;
-        private System.Windows.Forms.Button button_manageScore;
         private System.Windows.Forms.Button button_newScore;
         private System.Windows.Forms.Button button_score;
         private System.Windows.Forms.Panel panel_courseSubmenu;
