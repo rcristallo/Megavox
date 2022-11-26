@@ -17,7 +17,7 @@ namespace MegaVox.GUI
 {
     public partial class frmLogin : Form
     {
-        ClientDB student = new ClientDB();
+        ClientDB client = new ClientDB();
         public frmLogin()
         {
             InitializeComponent();
@@ -25,27 +25,25 @@ namespace MegaVox.GUI
 
         private void frmLogin_Load(object sender, EventArgs e)
         {
-            panel_log.BackColor = Color.FromArgb(120, 0, 0, 0);
-
-            button_login.FlatStyle = FlatStyle.Flat;
-
-            lblLogin.BackColor = Color.Transparent;
-            label_userName.BackColor = Color.Transparent;
-            label_Password.BackColor = Color.Transparent;
 
         }
 
-        private void button_login_Click(object sender, EventArgs e)
+        private void btnClose_Click(object sender, EventArgs e)
         {
-            if (textBox_usrname.Text == "" || textBox_password.Text == "")
+            Application.Exit();
+        }
+
+        private void button_Login_Click(object sender, EventArgs e)
+        {
+            if (textBox_username.Text == "" || textBox_password.Text == "")
             {
                 MessageBox.Show("Please enter your login credentials", "Invalid Login", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             else
             {
-                string username = textBox_usrname.Text;
+                string username = textBox_username.Text;
                 string password = textBox_password.Text;
-                DataTable table = student.getList(new MySqlCommand("SELECT * FROM `user` WHERE `username`= '" + username + "' AND `password`='" + password + "'"));
+                DataTable table = client.getList(new MySqlCommand("SELECT * FROM `user` WHERE `username`= '" + username + "' AND `password`='" + password + "'"));
                 if (table.Rows.Count > 0)
                 {
                     frmMain main = new frmMain();
@@ -58,7 +56,5 @@ namespace MegaVox.GUI
                 }
             }
         }
-
-
     }
 }
