@@ -157,6 +157,7 @@
   <ItemGroup>
     <Compile Include="BLL\ClientDB.cs" />
     <Compile Include="BLL\InventoryDB.cs" />
+    <Compile Include="BLL\UserDB.cs" />
     <Compile Include="DAL\UtilityDB.cs" />
     <Compile Include="GUI\frmCreateUser.cs">
       <SubType>Form</SubType>

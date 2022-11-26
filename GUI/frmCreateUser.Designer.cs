@@ -31,7 +31,7 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCreateUser));
             this.btn_New = new System.Windows.Forms.Button();
-            this.Button1 = new System.Windows.Forms.Button();
+            this.btnClose = new System.Windows.Forms.Button();
             this.btn_saveuser = new System.Windows.Forms.Button();
             this.btn_update = new System.Windows.Forms.Button();
             this.btn_delete = new System.Windows.Forms.Button();
@@ -70,20 +70,21 @@
             this.ToolTip1.SetToolTip(this.btn_New, "New");
             this.btn_New.UseVisualStyleBackColor = false;
             // 
-            // Button1
+            // btnClose
             // 
-            this.Button1.BackColor = System.Drawing.Color.Transparent;
-            this.Button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Button1.Font = new System.Drawing.Font("Arial Narrow", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Button1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.Button1.Location = new System.Drawing.Point(773, 218);
-            this.Button1.Margin = new System.Windows.Forms.Padding(4);
-            this.Button1.Name = "Button1";
-            this.Button1.Size = new System.Drawing.Size(176, 32);
-            this.Button1.TabIndex = 35;
-            this.Button1.Text = "Close";
-            this.ToolTip1.SetToolTip(this.Button1, "Close");
-            this.Button1.UseVisualStyleBackColor = false;
+            this.btnClose.BackColor = System.Drawing.Color.Transparent;
+            this.btnClose.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnClose.Font = new System.Drawing.Font("Arial Narrow", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClose.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnClose.Location = new System.Drawing.Point(773, 218);
+            this.btnClose.Margin = new System.Windows.Forms.Padding(4);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(176, 32);
+            this.btnClose.TabIndex = 35;
+            this.btnClose.Text = "Close";
+            this.ToolTip1.SetToolTip(this.btnClose, "Close");
+            this.btnClose.UseVisualStyleBackColor = false;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // btn_saveuser
             // 
@@ -309,7 +310,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1004, 639);
             this.Controls.Add(this.btn_New);
-            this.Controls.Add(this.Button1);
+            this.Controls.Add(this.btnClose);
             this.Controls.Add(this.btn_saveuser);
             this.Controls.Add(this.btn_update);
             this.Controls.Add(this.btn_delete);
@@ -330,7 +331,7 @@
 
         internal System.Windows.Forms.Button btn_New;
         internal System.Windows.Forms.ToolTip ToolTip1;
-        internal System.Windows.Forms.Button Button1;
+        internal System.Windows.Forms.Button btnClose;
         internal System.Windows.Forms.Button btn_saveuser;
         internal System.Windows.Forms.Button btn_update;
         internal System.Windows.Forms.Button btn_delete;
