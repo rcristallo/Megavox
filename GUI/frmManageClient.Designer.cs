@@ -93,12 +93,12 @@
             // button_clear
             // 
             this.button_clear.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button_clear.BackColor = System.Drawing.Color.Orange;
+            this.button_clear.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.button_clear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_clear.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_clear.ForeColor = System.Drawing.Color.White;
             this.button_clear.Location = new System.Drawing.Point(76, 452);
-            this.button_clear.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button_clear.Margin = new System.Windows.Forms.Padding(4);
             this.button_clear.Name = "button_clear";
             this.button_clear.Size = new System.Drawing.Size(157, 48);
             this.button_clear.TabIndex = 99;
@@ -109,12 +109,12 @@
             // button_delete
             // 
             this.button_delete.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button_delete.BackColor = System.Drawing.Color.Red;
+            this.button_delete.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.button_delete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_delete.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_delete.ForeColor = System.Drawing.Color.White;
             this.button_delete.Location = new System.Drawing.Point(404, 452);
-            this.button_delete.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button_delete.Margin = new System.Windows.Forms.Padding(4);
             this.button_delete.Name = "button_delete";
             this.button_delete.Size = new System.Drawing.Size(157, 48);
             this.button_delete.TabIndex = 98;
@@ -125,12 +125,12 @@
             // button_update
             // 
             this.button_update.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button_update.BackColor = System.Drawing.Color.OrangeRed;
+            this.button_update.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.button_update.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_update.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_update.ForeColor = System.Drawing.Color.White;
             this.button_update.Location = new System.Drawing.Point(241, 452);
-            this.button_update.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button_update.Margin = new System.Windows.Forms.Padding(4);
             this.button_update.Name = "button_update";
             this.button_update.Size = new System.Drawing.Size(157, 48);
             this.button_update.TabIndex = 97;
@@ -142,7 +142,7 @@
             // 
             this.txtId.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtId.Location = new System.Drawing.Point(102, 392);
-            this.txtId.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtId.Margin = new System.Windows.Forms.Padding(4);
             this.txtId.Name = "txtId";
             this.txtId.Size = new System.Drawing.Size(112, 22);
             this.txtId.TabIndex = 96;
@@ -164,7 +164,7 @@
             // 
             this.txtPhone.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtPhone.Location = new System.Drawing.Point(663, 254);
-            this.txtPhone.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtPhone.Margin = new System.Windows.Forms.Padding(4);
             this.txtPhone.Name = "txtPhone";
             this.txtPhone.Size = new System.Drawing.Size(151, 22);
             this.txtPhone.TabIndex = 95;
@@ -185,24 +185,25 @@
             // button_upload
             // 
             this.button_upload.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button_upload.BackColor = System.Drawing.Color.Green;
+            this.button_upload.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.button_upload.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_upload.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_upload.ForeColor = System.Drawing.Color.White;
             this.button_upload.Location = new System.Drawing.Point(750, 436);
-            this.button_upload.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button_upload.Margin = new System.Windows.Forms.Padding(4);
             this.button_upload.Name = "button_upload";
             this.button_upload.Size = new System.Drawing.Size(157, 48);
             this.button_upload.TabIndex = 92;
             this.button_upload.Text = "Upload";
             this.button_upload.UseVisualStyleBackColor = false;
+            this.button_upload.Click += new System.EventHandler(this.button_upload_Click);
             // 
             // imgClient
             // 
             this.imgClient.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.imgClient.BackColor = System.Drawing.Color.Gainsboro;
             this.imgClient.Location = new System.Drawing.Point(750, 293);
-            this.imgClient.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.imgClient.Margin = new System.Windows.Forms.Padding(4);
             this.imgClient.Name = "imgClient";
             this.imgClient.Size = new System.Drawing.Size(157, 135);
             this.imgClient.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -213,7 +214,7 @@
             // 
             this.txtAddress.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtAddress.Location = new System.Drawing.Point(116, 324);
-            this.txtAddress.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtAddress.Margin = new System.Windows.Forms.Padding(4);
             this.txtAddress.Multiline = true;
             this.txtAddress.Name = "txtAddress";
             this.txtAddress.Size = new System.Drawing.Size(592, 61);
@@ -226,7 +227,7 @@
             this.radioButton_female.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton_female.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
             this.radioButton_female.Location = new System.Drawing.Point(620, 293);
-            this.radioButton_female.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.radioButton_female.Margin = new System.Windows.Forms.Padding(4);
             this.radioButton_female.Name = "radioButton_female";
             this.radioButton_female.Size = new System.Drawing.Size(104, 29);
             this.radioButton_female.TabIndex = 89;
@@ -241,7 +242,7 @@
             this.radioButton_male.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton_male.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
             this.radioButton_male.Location = new System.Drawing.Point(524, 293);
-            this.radioButton_male.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.radioButton_male.Margin = new System.Windows.Forms.Padding(4);
             this.radioButton_male.Name = "radioButton_male";
             this.radioButton_male.Size = new System.Drawing.Size(80, 29);
             this.radioButton_male.TabIndex = 88;
@@ -253,7 +254,7 @@
             // 
             this.datePicker.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.datePicker.Location = new System.Drawing.Point(171, 294);
-            this.datePicker.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.datePicker.Margin = new System.Windows.Forms.Padding(4);
             this.datePicker.Name = "datePicker";
             this.datePicker.Size = new System.Drawing.Size(223, 22);
             this.datePicker.TabIndex = 87;
@@ -262,7 +263,7 @@
             // 
             this.txtLastName.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtLastName.Location = new System.Drawing.Point(432, 254);
-            this.txtLastName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtLastName.Margin = new System.Windows.Forms.Padding(4);
             this.txtLastName.Name = "txtLastName";
             this.txtLastName.Size = new System.Drawing.Size(133, 22);
             this.txtLastName.TabIndex = 86;
@@ -297,7 +298,7 @@
             // 
             this.txtFirstName.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtFirstName.Location = new System.Drawing.Point(152, 251);
-            this.txtFirstName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtFirstName.Margin = new System.Windows.Forms.Padding(4);
             this.txtFirstName.Name = "txtFirstName";
             this.txtFirstName.Size = new System.Drawing.Size(138, 22);
             this.txtFirstName.TabIndex = 83;
@@ -344,12 +345,12 @@
             // button_search
             // 
             this.button_search.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button_search.BackColor = System.Drawing.Color.Orange;
+            this.button_search.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.button_search.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_search.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_search.ForeColor = System.Drawing.Color.White;
             this.button_search.Location = new System.Drawing.Point(779, 2);
-            this.button_search.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button_search.Margin = new System.Windows.Forms.Padding(4);
             this.button_search.Name = "button_search";
             this.button_search.Size = new System.Drawing.Size(145, 34);
             this.button_search.TabIndex = 59;
@@ -361,7 +362,7 @@
             // 
             this.txtSearch.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txtSearch.Location = new System.Drawing.Point(563, 10);
-            this.txtSearch.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtSearch.Margin = new System.Windows.Forms.Padding(4);
             this.txtSearch.Name = "txtSearch";
             this.txtSearch.Size = new System.Drawing.Size(207, 22);
             this.txtSearch.TabIndex = 58;
@@ -370,9 +371,9 @@
             // 
             this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(190)))), ((int)(((byte)(138)))));
+            this.panel3.BackColor = System.Drawing.Color.Black;
             this.panel3.Location = new System.Drawing.Point(4, 234);
-            this.panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(934, 12);
             this.panel3.TabIndex = 57;
@@ -381,7 +382,7 @@
             // 
             this.DataGridView_client.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DataGridView_client.Location = new System.Drawing.Point(5, 42);
-            this.DataGridView_client.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.DataGridView_client.Margin = new System.Windows.Forms.Padding(4);
             this.DataGridView_client.Name = "DataGridView_client";
             this.DataGridView_client.RowHeadersWidth = 51;
             this.DataGridView_client.Size = new System.Drawing.Size(932, 190);
@@ -394,7 +395,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(958, 515);
             this.Controls.Add(this.groupBox1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmManageClient";
             this.Text = "Megavox : Manage Clients";
             this.Load += new System.EventHandler(this.frmManageClient_Load);
