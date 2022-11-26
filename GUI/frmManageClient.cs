@@ -51,15 +51,6 @@ namespace MegaVox.GUI
             imgClient.Image = Image.FromStream(ms);
         }
 
-        private void button_upload_Click(object sender, EventArgs e)
-        {
-            OpenFileDialog opf = new OpenFileDialog();
-            opf.Filter = "Select Photo(*.jpg;*.png;*.gif)|*.jpg;*.png;*.gif";
-
-            if (opf.ShowDialog() == DialogResult.OK)
-                imgClient.Image = Image.FromFile(opf.FileName);
-        }
-
         bool verify()
         {
             if ((txtFirstName.Text == "") || (txtLastName.Text == "") ||
@@ -70,6 +61,15 @@ namespace MegaVox.GUI
             }
             else
                 return true;
+        }
+
+        private void button_upload_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog opf = new OpenFileDialog();
+            opf.Filter = "Select Photo(*.jpg;*.png;*.gif)|*.jpg;*.png;*.gif";
+
+            if (opf.ShowDialog() == DialogResult.OK)
+                imgClient.Image = Image.FromFile(opf.FileName);
         }
 
         private void frmManageClient_Load(object sender, EventArgs e)

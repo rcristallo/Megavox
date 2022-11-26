@@ -36,8 +36,6 @@
             this.label_femaleStd = new System.Windows.Forms.Label();
             this.label_maleStd = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
-            this.label_cfemale = new System.Windows.Forms.Label();
-            this.label_cmale = new System.Windows.Forms.Label();
             this.comboBox_course = new System.Windows.Forms.ComboBox();
             this.label_totalStd = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -55,7 +53,6 @@
             this.button_newScore = new System.Windows.Forms.Button();
             this.button_score = new System.Windows.Forms.Button();
             this.panel_courseSubmenu = new System.Windows.Forms.Panel();
-            this.button_manageCourse = new System.Windows.Forms.Button();
             this.button_newInventory = new System.Windows.Forms.Button();
             this.button_course = new System.Windows.Forms.Button();
             this.panel_stdsubmenu = new System.Windows.Forms.Panel();
@@ -117,8 +114,6 @@
             this.panel3.Controls.Add(this.label_femaleStd);
             this.panel3.Controls.Add(this.label_maleStd);
             this.panel3.Controls.Add(this.label11);
-            this.panel3.Controls.Add(this.label_cfemale);
-            this.panel3.Controls.Add(this.label_cmale);
             this.panel3.Controls.Add(this.comboBox_course);
             this.panel3.Controls.Add(this.label_totalStd);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
@@ -154,39 +149,17 @@
             this.label11.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.label11.AutoSize = true;
             this.label11.ForeColor = System.Drawing.Color.White;
-            this.label11.Location = new System.Drawing.Point(471, 19);
+            this.label11.Location = new System.Drawing.Point(492, 38);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(147, 25);
             this.label11.TabIndex = 6;
             this.label11.Text = "NEED TO FIX :";
             // 
-            // label_cfemale
-            // 
-            this.label_cfemale.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.label_cfemale.AutoSize = true;
-            this.label_cfemale.ForeColor = System.Drawing.Color.White;
-            this.label_cfemale.Location = new System.Drawing.Point(735, 53);
-            this.label_cfemale.Name = "label_cfemale";
-            this.label_cfemale.Size = new System.Drawing.Size(88, 25);
-            this.label_cfemale.TabIndex = 4;
-            this.label_cfemale.Text = "Female :";
-            // 
-            // label_cmale
-            // 
-            this.label_cmale.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.label_cmale.AutoSize = true;
-            this.label_cmale.ForeColor = System.Drawing.Color.White;
-            this.label_cmale.Location = new System.Drawing.Point(629, 53);
-            this.label_cmale.Name = "label_cmale";
-            this.label_cmale.Size = new System.Drawing.Size(66, 25);
-            this.label_cmale.TabIndex = 5;
-            this.label_cmale.Text = "Male :";
-            // 
             // comboBox_course
             // 
             this.comboBox_course.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.comboBox_course.FormattingEnabled = true;
-            this.comboBox_course.Location = new System.Drawing.Point(624, 12);
+            this.comboBox_course.Location = new System.Drawing.Point(645, 31);
             this.comboBox_course.Name = "comboBox_course";
             this.comboBox_course.Size = new System.Drawing.Size(211, 33);
             this.comboBox_course.TabIndex = 3;
@@ -199,9 +172,9 @@
             this.label_totalStd.ForeColor = System.Drawing.Color.White;
             this.label_totalStd.Location = new System.Drawing.Point(35, 13);
             this.label_totalStd.Name = "label_totalStd";
-            this.label_totalStd.Size = new System.Drawing.Size(127, 25);
+            this.label_totalStd.Size = new System.Drawing.Size(195, 31);
             this.label_totalStd.TabIndex = 1;
-            this.label_totalStd.Text = "Total Clients:";
+            this.label_totalStd.Text = "Inventory Count:";
             // 
             // panel2
             // 
@@ -286,9 +259,9 @@
             this.label12.ForeColor = System.Drawing.Color.Black;
             this.label12.Location = new System.Drawing.Point(8, 24);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(325, 25);
+            this.label12.Size = new System.Drawing.Size(438, 31);
             this.label12.TabIndex = 0;
-            this.label12.Text = "MegaFox - Management System";
+            this.label12.Text = "Megafox - Restaurant Management";
             // 
             // panel_slide
             // 
@@ -317,11 +290,11 @@
             this.button_exit.FlatAppearance.BorderSize = 0;
             this.button_exit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_exit.ForeColor = System.Drawing.Color.White;
-            this.button_exit.Location = new System.Drawing.Point(0, 619);
+            this.button_exit.Location = new System.Drawing.Point(0, 557);
             this.button_exit.Margin = new System.Windows.Forms.Padding(5);
             this.button_exit.Name = "button_exit";
             this.button_exit.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.button_exit.Size = new System.Drawing.Size(179, 55);
+            this.button_exit.Size = new System.Drawing.Size(179, 57);
             this.button_exit.TabIndex = 8;
             this.button_exit.Text = "Exit";
             this.button_exit.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -335,7 +308,7 @@
             this.button_dashboard.FlatAppearance.BorderSize = 0;
             this.button_dashboard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_dashboard.ForeColor = System.Drawing.Color.White;
-            this.button_dashboard.Location = new System.Drawing.Point(0, 554);
+            this.button_dashboard.Location = new System.Drawing.Point(0, 492);
             this.button_dashboard.Margin = new System.Windows.Forms.Padding(5);
             this.button_dashboard.Name = "button_dashboard";
             this.button_dashboard.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
@@ -351,7 +324,7 @@
             this.panel_scoreSubmenu.BackColor = System.Drawing.Color.Black;
             this.panel_scoreSubmenu.Controls.Add(this.button_newScore);
             this.panel_scoreSubmenu.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel_scoreSubmenu.Location = new System.Drawing.Point(0, 509);
+            this.panel_scoreSubmenu.Location = new System.Drawing.Point(0, 447);
             this.panel_scoreSubmenu.Name = "panel_scoreSubmenu";
             this.panel_scoreSubmenu.Size = new System.Drawing.Size(179, 45);
             this.panel_scoreSubmenu.TabIndex = 6;
@@ -380,7 +353,7 @@
             this.button_score.FlatAppearance.BorderSize = 0;
             this.button_score.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_score.ForeColor = System.Drawing.Color.White;
-            this.button_score.Location = new System.Drawing.Point(0, 454);
+            this.button_score.Location = new System.Drawing.Point(0, 392);
             this.button_score.Margin = new System.Windows.Forms.Padding(5);
             this.button_score.Name = "button_score";
             this.button_score.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
@@ -393,30 +366,13 @@
             // 
             // panel_courseSubmenu
             // 
-            this.panel_courseSubmenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(200)))));
-            this.panel_courseSubmenu.Controls.Add(this.button_manageCourse);
+            this.panel_courseSubmenu.BackColor = System.Drawing.Color.Black;
             this.panel_courseSubmenu.Controls.Add(this.button_newInventory);
             this.panel_courseSubmenu.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel_courseSubmenu.Location = new System.Drawing.Point(0, 354);
+            this.panel_courseSubmenu.Location = new System.Drawing.Point(0, 346);
             this.panel_courseSubmenu.Name = "panel_courseSubmenu";
-            this.panel_courseSubmenu.Size = new System.Drawing.Size(179, 100);
+            this.panel_courseSubmenu.Size = new System.Drawing.Size(179, 46);
             this.panel_courseSubmenu.TabIndex = 4;
-            // 
-            // button_manageCourse
-            // 
-            this.button_manageCourse.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(86)))), ((int)(((byte)(90)))));
-            this.button_manageCourse.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button_manageCourse.FlatAppearance.BorderSize = 0;
-            this.button_manageCourse.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_manageCourse.ForeColor = System.Drawing.Color.White;
-            this.button_manageCourse.Location = new System.Drawing.Point(0, 50);
-            this.button_manageCourse.Name = "button_manageCourse";
-            this.button_manageCourse.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.button_manageCourse.Size = new System.Drawing.Size(179, 50);
-            this.button_manageCourse.TabIndex = 1;
-            this.button_manageCourse.Text = "Manage Inventory";
-            this.button_manageCourse.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button_manageCourse.UseVisualStyleBackColor = false;
             // 
             // button_newInventory
             // 
@@ -430,7 +386,7 @@
             this.button_newInventory.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
             this.button_newInventory.Size = new System.Drawing.Size(179, 50);
             this.button_newInventory.TabIndex = 0;
-            this.button_newInventory.Text = "New Inventory";
+            this.button_newInventory.Text = "Manage Inventory";
             this.button_newInventory.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button_newInventory.UseVisualStyleBackColor = false;
             this.button_newInventory.Click += new System.EventHandler(this.button_newInventory_Click);
@@ -442,7 +398,7 @@
             this.button_course.FlatAppearance.BorderSize = 0;
             this.button_course.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_course.ForeColor = System.Drawing.Color.White;
-            this.button_course.Location = new System.Drawing.Point(0, 299);
+            this.button_course.Location = new System.Drawing.Point(0, 291);
             this.button_course.Margin = new System.Windows.Forms.Padding(5);
             this.button_course.Name = "button_course";
             this.button_course.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
@@ -461,7 +417,7 @@
             this.panel_stdsubmenu.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel_stdsubmenu.Location = new System.Drawing.Point(0, 196);
             this.panel_stdsubmenu.Name = "panel_stdsubmenu";
-            this.panel_stdsubmenu.Size = new System.Drawing.Size(179, 103);
+            this.panel_stdsubmenu.Size = new System.Drawing.Size(179, 95);
             this.panel_stdsubmenu.TabIndex = 2;
             // 
             // button_manageClient
@@ -474,7 +430,7 @@
             this.button_manageClient.Location = new System.Drawing.Point(0, 50);
             this.button_manageClient.Name = "button_manageClient";
             this.button_manageClient.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.button_manageClient.Size = new System.Drawing.Size(179, 50);
+            this.button_manageClient.Size = new System.Drawing.Size(179, 38);
             this.button_manageClient.TabIndex = 1;
             this.button_manageClient.Text = "Manage Customer";
             this.button_manageClient.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -572,8 +528,6 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label_cfemale;
-        private System.Windows.Forms.Label label_cmale;
         private System.Windows.Forms.ComboBox comboBox_course;
         private System.Windows.Forms.Label label_totalStd;
         private System.Windows.Forms.Panel panel2;
@@ -591,7 +545,6 @@
         private System.Windows.Forms.Button button_newScore;
         private System.Windows.Forms.Button button_score;
         private System.Windows.Forms.Panel panel_courseSubmenu;
-        private System.Windows.Forms.Button button_manageCourse;
         private System.Windows.Forms.Button button_newInventory;
         private System.Windows.Forms.Button button_course;
         private System.Windows.Forms.Panel panel_stdsubmenu;

@@ -11,7 +11,6 @@ namespace MegaVox.BLL
 {
     class UserDB
     {
-        {
             UtilityDB connect = new UtilityDB();
 
             public bool insertUser(string InvName, int price, string desc)
@@ -81,4 +80,3 @@ namespace MegaVox.BLL
 
         }
     }
-}
