@@ -114,7 +114,7 @@
             // 
             // panel3
             // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.panel3.BackColor = System.Drawing.Color.Black;
             this.panel3.Controls.Add(this.label_femaleStd);
             this.panel3.Controls.Add(this.label_maleStd);
             this.panel3.Controls.Add(this.label11);
@@ -155,7 +155,7 @@
             this.label11.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.label11.AutoSize = true;
             this.label11.ForeColor = System.Drawing.Color.White;
-            this.label11.Location = new System.Drawing.Point(507, 16);
+            this.label11.Location = new System.Drawing.Point(471, 19);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(147, 25);
             this.label11.TabIndex = 6;
@@ -206,7 +206,7 @@
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.panel2.BackColor = System.Drawing.Color.Black;
             this.panel2.Controls.Add(this.pictureBox1);
             this.panel2.Controls.Add(this.label_role);
             this.panel2.Controls.Add(this.label_user);
@@ -282,8 +282,9 @@
             // label12
             // 
             this.label12.AutoSize = true;
+            this.label12.BackColor = System.Drawing.SystemColors.Control;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.label12.ForeColor = System.Drawing.Color.Black;
             this.label12.Location = new System.Drawing.Point(8, 24);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(325, 25);
@@ -312,12 +313,12 @@
             // 
             // button_exit
             // 
-            this.button_exit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.button_exit.BackColor = System.Drawing.Color.Black;
             this.button_exit.Dock = System.Windows.Forms.DockStyle.Top;
             this.button_exit.FlatAppearance.BorderSize = 0;
             this.button_exit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_exit.ForeColor = System.Drawing.Color.White;
-            this.button_exit.Location = new System.Drawing.Point(0, 663);
+            this.button_exit.Location = new System.Drawing.Point(0, 673);
             this.button_exit.Margin = new System.Windows.Forms.Padding(5);
             this.button_exit.Name = "button_exit";
             this.button_exit.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
@@ -330,7 +331,7 @@
             // 
             // button_dashboard
             // 
-            this.button_dashboard.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.button_dashboard.BackColor = System.Drawing.Color.Black;
             this.button_dashboard.Dock = System.Windows.Forms.DockStyle.Top;
             this.button_dashboard.FlatAppearance.BorderSize = 0;
             this.button_dashboard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -339,7 +340,7 @@
             this.button_dashboard.Margin = new System.Windows.Forms.Padding(5);
             this.button_dashboard.Name = "button_dashboard";
             this.button_dashboard.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.button_dashboard.Size = new System.Drawing.Size(179, 55);
+            this.button_dashboard.Size = new System.Drawing.Size(179, 65);
             this.button_dashboard.TabIndex = 7;
             this.button_dashboard.Text = "Dashboard";
             this.button_dashboard.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -359,7 +360,7 @@
             // 
             // button_manageScore
             // 
-            this.button_manageScore.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.button_manageScore.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(86)))), ((int)(((byte)(90)))));
             this.button_manageScore.Dock = System.Windows.Forms.DockStyle.Top;
             this.button_manageScore.FlatAppearance.BorderSize = 0;
             this.button_manageScore.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -375,7 +376,7 @@
             // 
             // button_newScore
             // 
-            this.button_newScore.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.button_newScore.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(86)))), ((int)(((byte)(90)))));
             this.button_newScore.Dock = System.Windows.Forms.DockStyle.Top;
             this.button_newScore.FlatAppearance.BorderSize = 0;
             this.button_newScore.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -392,7 +393,7 @@
             // 
             // button_score
             // 
-            this.button_score.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.button_score.BackColor = System.Drawing.Color.Black;
             this.button_score.Dock = System.Windows.Forms.DockStyle.Top;
             this.button_score.FlatAppearance.BorderSize = 0;
             this.button_score.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -421,7 +422,7 @@
             // 
             // button_manageCourse
             // 
-            this.button_manageCourse.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.button_manageCourse.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(86)))), ((int)(((byte)(90)))));
             this.button_manageCourse.Dock = System.Windows.Forms.DockStyle.Top;
             this.button_manageCourse.FlatAppearance.BorderSize = 0;
             this.button_manageCourse.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -437,7 +438,7 @@
             // 
             // button_newInventory
             // 
-            this.button_newInventory.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.button_newInventory.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(86)))), ((int)(((byte)(90)))));
             this.button_newInventory.Dock = System.Windows.Forms.DockStyle.Top;
             this.button_newInventory.FlatAppearance.BorderSize = 0;
             this.button_newInventory.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -454,7 +455,7 @@
             // 
             // button_course
             // 
-            this.button_course.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.button_course.BackColor = System.Drawing.Color.Black;
             this.button_course.Dock = System.Windows.Forms.DockStyle.Top;
             this.button_course.FlatAppearance.BorderSize = 0;
             this.button_course.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -472,7 +473,7 @@
             // 
             // panel_stdsubmenu
             // 
-            this.panel_stdsubmenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.panel_stdsubmenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(86)))), ((int)(((byte)(90)))));
             this.panel_stdsubmenu.Controls.Add(this.button_manageClient);
             this.panel_stdsubmenu.Controls.Add(this.button_registration);
             this.panel_stdsubmenu.Dock = System.Windows.Forms.DockStyle.Top;
@@ -483,7 +484,7 @@
             // 
             // button_manageClient
             // 
-            this.button_manageClient.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.button_manageClient.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(86)))), ((int)(((byte)(90)))));
             this.button_manageClient.Dock = System.Windows.Forms.DockStyle.Top;
             this.button_manageClient.FlatAppearance.BorderSize = 0;
             this.button_manageClient.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -500,7 +501,7 @@
             // 
             // button_registration
             // 
-            this.button_registration.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.button_registration.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(86)))), ((int)(((byte)(90)))));
             this.button_registration.Dock = System.Windows.Forms.DockStyle.Top;
             this.button_registration.FlatAppearance.BorderSize = 0;
             this.button_registration.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -517,7 +518,7 @@
             // 
             // button_client
             // 
-            this.button_client.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.button_client.BackColor = System.Drawing.Color.Black;
             this.button_client.Dock = System.Windows.Forms.DockStyle.Top;
             this.button_client.FlatAppearance.BorderSize = 0;
             this.button_client.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -535,7 +536,7 @@
             // 
             // panel_logo
             // 
-            this.panel_logo.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.panel_logo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(86)))), ((int)(((byte)(90)))));
             this.panel_logo.Controls.Add(this.panel4);
             this.panel_logo.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel_logo.Location = new System.Drawing.Point(0, 0);
