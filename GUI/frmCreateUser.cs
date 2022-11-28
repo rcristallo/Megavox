@@ -91,19 +91,6 @@ namespace MegaVox.GUI
 
         }
 
-        private void btn_delete_Click(object sender, EventArgs e)
-        {
-            int userid = Convert.ToInt32(txtUserId.Text);
-            if (MessageBox.Show("Are you sure you want to delete this user?", "Remove User", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
-            {
-                if (user.deleteUser(userid))
-                {
-                    showTable();
-                    MessageBox.Show("User Successfully deleted", "Warning Deletion : User Removed.", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    btnClose.PerformClick();
-                }
-            }
-        }
 
         private void btn_New_Click(object sender, EventArgs e)
         {
@@ -120,6 +107,20 @@ namespace MegaVox.GUI
             txtUserName.Text = GrdUser.CurrentRow.Cells[1].Value.ToString();
             txtPassword.Text = GrdUser.CurrentRow.Cells[2].Value.ToString();
             cboType.SelectedItem = GrdUser.CurrentRow.Cells[3].Value.ToString();
+        }
+
+        private void btn_delete_Click(object sender, EventArgs e)
+        {
+            int userid = Convert.ToInt32(txtUserId.Text);
+            if (MessageBox.Show("Are you sure you want to delete this user?", "Remove User", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                if (user.deleteUser(userid))
+                {
+                    showTable();
+                    MessageBox.Show("User Successfully deleted", "Warning Deletion : User Removed.", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    btnClose.PerformClick();
+                }
+            }
         }
     }
 }
