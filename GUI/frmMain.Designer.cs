@@ -33,11 +33,6 @@
             this.panel_cover = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.label_femaleStd = new System.Windows.Forms.Label();
-            this.label_maleStd = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.comboBox_course = new System.Windows.Forms.ComboBox();
-            this.label_totalStd = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label_role = new System.Windows.Forms.Label();
@@ -50,8 +45,8 @@
             this.button_exit = new System.Windows.Forms.Button();
             this.button_dashboard = new System.Windows.Forms.Button();
             this.panel_scoreSubmenu = new System.Windows.Forms.Panel();
-            this.button_newScore = new System.Windows.Forms.Button();
-            this.button_score = new System.Windows.Forms.Button();
+            this.button_create = new System.Windows.Forms.Button();
+            this.button_user = new System.Windows.Forms.Button();
             this.panel_courseSubmenu = new System.Windows.Forms.Panel();
             this.button_newInventory = new System.Windows.Forms.Button();
             this.button_course = new System.Windows.Forms.Button();
@@ -64,7 +59,6 @@
             this.panel_main.SuspendLayout();
             this.panel_cover.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
@@ -111,70 +105,11 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.Black;
-            this.panel3.Controls.Add(this.label_femaleStd);
-            this.panel3.Controls.Add(this.label_maleStd);
-            this.panel3.Controls.Add(this.label11);
-            this.panel3.Controls.Add(this.comboBox_course);
-            this.panel3.Controls.Add(this.label_totalStd);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel3.Location = new System.Drawing.Point(0, 465);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(898, 94);
             this.panel3.TabIndex = 2;
-            // 
-            // label_femaleStd
-            // 
-            this.label_femaleStd.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.label_femaleStd.AutoSize = true;
-            this.label_femaleStd.ForeColor = System.Drawing.Color.White;
-            this.label_femaleStd.Location = new System.Drawing.Point(132, 39);
-            this.label_femaleStd.Name = "label_femaleStd";
-            this.label_femaleStd.Size = new System.Drawing.Size(88, 25);
-            this.label_femaleStd.TabIndex = 7;
-            this.label_femaleStd.Text = "Female :";
-            // 
-            // label_maleStd
-            // 
-            this.label_maleStd.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.label_maleStd.AutoSize = true;
-            this.label_maleStd.ForeColor = System.Drawing.Color.White;
-            this.label_maleStd.Location = new System.Drawing.Point(35, 39);
-            this.label_maleStd.Name = "label_maleStd";
-            this.label_maleStd.Size = new System.Drawing.Size(66, 25);
-            this.label_maleStd.TabIndex = 8;
-            this.label_maleStd.Text = "Male :";
-            // 
-            // label11
-            // 
-            this.label11.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.label11.AutoSize = true;
-            this.label11.ForeColor = System.Drawing.Color.White;
-            this.label11.Location = new System.Drawing.Point(492, 38);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(147, 25);
-            this.label11.TabIndex = 6;
-            this.label11.Text = "NEED TO FIX :";
-            // 
-            // comboBox_course
-            // 
-            this.comboBox_course.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.comboBox_course.FormattingEnabled = true;
-            this.comboBox_course.Location = new System.Drawing.Point(645, 31);
-            this.comboBox_course.Name = "comboBox_course";
-            this.comboBox_course.Size = new System.Drawing.Size(211, 33);
-            this.comboBox_course.TabIndex = 3;
-            this.comboBox_course.SelectedIndexChanged += new System.EventHandler(this.comboBox_course_SelectedIndexChanged);
-            // 
-            // label_totalStd
-            // 
-            this.label_totalStd.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.label_totalStd.AutoSize = true;
-            this.label_totalStd.ForeColor = System.Drawing.Color.White;
-            this.label_totalStd.Location = new System.Drawing.Point(35, 13);
-            this.label_totalStd.Name = "label_totalStd";
-            this.label_totalStd.Size = new System.Drawing.Size(195, 31);
-            this.label_totalStd.TabIndex = 1;
-            this.label_totalStd.Text = "Inventory Count:";
             // 
             // panel2
             // 
@@ -259,7 +194,7 @@
             this.label12.ForeColor = System.Drawing.Color.Black;
             this.label12.Location = new System.Drawing.Point(8, 24);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(438, 31);
+            this.label12.Size = new System.Drawing.Size(350, 25);
             this.label12.TabIndex = 0;
             this.label12.Text = "Megafox - Restaurant Management";
             // 
@@ -270,7 +205,7 @@
             this.panel_slide.Controls.Add(this.button_exit);
             this.panel_slide.Controls.Add(this.button_dashboard);
             this.panel_slide.Controls.Add(this.panel_scoreSubmenu);
-            this.panel_slide.Controls.Add(this.button_score);
+            this.panel_slide.Controls.Add(this.button_user);
             this.panel_slide.Controls.Add(this.panel_courseSubmenu);
             this.panel_slide.Controls.Add(this.button_course);
             this.panel_slide.Controls.Add(this.panel_stdsubmenu);
@@ -322,47 +257,47 @@
             // panel_scoreSubmenu
             // 
             this.panel_scoreSubmenu.BackColor = System.Drawing.Color.Black;
-            this.panel_scoreSubmenu.Controls.Add(this.button_newScore);
+            this.panel_scoreSubmenu.Controls.Add(this.button_create);
             this.panel_scoreSubmenu.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel_scoreSubmenu.Location = new System.Drawing.Point(0, 447);
             this.panel_scoreSubmenu.Name = "panel_scoreSubmenu";
             this.panel_scoreSubmenu.Size = new System.Drawing.Size(179, 45);
             this.panel_scoreSubmenu.TabIndex = 6;
             // 
-            // button_newScore
+            // button_create
             // 
-            this.button_newScore.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(86)))), ((int)(((byte)(90)))));
-            this.button_newScore.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button_newScore.FlatAppearance.BorderSize = 0;
-            this.button_newScore.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_newScore.ForeColor = System.Drawing.Color.White;
-            this.button_newScore.Location = new System.Drawing.Point(0, 0);
-            this.button_newScore.Name = "button_newScore";
-            this.button_newScore.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.button_newScore.Size = new System.Drawing.Size(179, 50);
-            this.button_newScore.TabIndex = 0;
-            this.button_newScore.Text = "Create User";
-            this.button_newScore.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button_newScore.UseVisualStyleBackColor = false;
-            this.button_newScore.Click += new System.EventHandler(this.button_newScore_Click);
+            this.button_create.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(83)))), ((int)(((byte)(86)))), ((int)(((byte)(90)))));
+            this.button_create.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button_create.FlatAppearance.BorderSize = 0;
+            this.button_create.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_create.ForeColor = System.Drawing.Color.White;
+            this.button_create.Location = new System.Drawing.Point(0, 0);
+            this.button_create.Name = "button_create";
+            this.button_create.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            this.button_create.Size = new System.Drawing.Size(179, 50);
+            this.button_create.TabIndex = 0;
+            this.button_create.Text = "Create User";
+            this.button_create.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button_create.UseVisualStyleBackColor = false;
+            this.button_create.Click += new System.EventHandler(this.button_create_Click);
             // 
-            // button_score
+            // button_user
             // 
-            this.button_score.BackColor = System.Drawing.Color.Black;
-            this.button_score.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button_score.FlatAppearance.BorderSize = 0;
-            this.button_score.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_score.ForeColor = System.Drawing.Color.White;
-            this.button_score.Location = new System.Drawing.Point(0, 392);
-            this.button_score.Margin = new System.Windows.Forms.Padding(5);
-            this.button_score.Name = "button_score";
-            this.button_score.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.button_score.Size = new System.Drawing.Size(179, 55);
-            this.button_score.TabIndex = 5;
-            this.button_score.Text = "User Panel";
-            this.button_score.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button_score.UseVisualStyleBackColor = false;
-            this.button_score.Click += new System.EventHandler(this.button_score_Click);
+            this.button_user.BackColor = System.Drawing.Color.Black;
+            this.button_user.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button_user.FlatAppearance.BorderSize = 0;
+            this.button_user.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_user.ForeColor = System.Drawing.Color.White;
+            this.button_user.Location = new System.Drawing.Point(0, 392);
+            this.button_user.Margin = new System.Windows.Forms.Padding(5);
+            this.button_user.Name = "button_user";
+            this.button_user.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.button_user.Size = new System.Drawing.Size(179, 55);
+            this.button_user.TabIndex = 5;
+            this.button_user.Text = "User Panel";
+            this.button_user.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button_user.UseVisualStyleBackColor = false;
+            this.button_user.Click += new System.EventHandler(this.button_score_Click);
             // 
             // panel_courseSubmenu
             // 
@@ -503,11 +438,10 @@
             this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "frmMain";
             this.Text = "Megavox : Dashboard";
+            this.Load += new System.EventHandler(this.frmMain_Load);
             this.panel_main.ResumeLayout(false);
             this.panel_cover.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -527,9 +461,6 @@
         private System.Windows.Forms.Panel panel_cover;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.ComboBox comboBox_course;
-        private System.Windows.Forms.Label label_totalStd;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label_role;
@@ -542,8 +473,8 @@
         private System.Windows.Forms.Button button_exit;
         private System.Windows.Forms.Button button_dashboard;
         private System.Windows.Forms.Panel panel_scoreSubmenu;
-        private System.Windows.Forms.Button button_newScore;
-        private System.Windows.Forms.Button button_score;
+        private System.Windows.Forms.Button button_create;
+        private System.Windows.Forms.Button button_user;
         private System.Windows.Forms.Panel panel_courseSubmenu;
         private System.Windows.Forms.Button button_newInventory;
         private System.Windows.Forms.Button button_course;
@@ -552,8 +483,6 @@
         private System.Windows.Forms.Button button_registration;
         private System.Windows.Forms.Button button_client;
         private System.Windows.Forms.Panel panel_logo;
-        private System.Windows.Forms.Label label_femaleStd;
-        private System.Windows.Forms.Label label_maleStd;
         private System.Windows.Forms.Panel panel4;
     }
 }

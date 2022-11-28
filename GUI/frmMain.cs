@@ -10,17 +10,30 @@ using System.Windows.Forms;
 
 using MegaVox.DAL;
 using MegaVox.BLL;
+using MySql.Data.MySqlClient;
+using MySqlX.XDevAPI.Relational;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace MegaVox.GUI
 {
     public partial class frmMain : Form
     {
         ClientDB client = new ClientDB();
+        UserDB user = new UserDB();
         InventoryDB inventory = new InventoryDB();
         public frmMain()
         {
             InitializeComponent();
             customizedDesign();
+        }
+        String username, password;
+        public frmMain(string un, string pw)
+        {
+            InitializeComponent();
+            customizedDesign();
+            username = un;
+            password = pw;
         }
 
         private void hideSubmenu()
@@ -116,9 +129,26 @@ namespace MegaVox.GUI
             openChildForm(new frmInventory());
         }
 
-        private void button_newScore_Click(object sender, EventArgs e)
+        private void button_create_Click(object sender, EventArgs e)
         {
             openChildForm(new frmCreateUser());
         }
+
+        private void frmMain_Load(object sender, EventArgs e)
+        {
+
+            //Default is Staff (1)
+            string UserType = "1";
+
+            DataTable table = user.getUser(new MySqlCommand("SELECT `type` FROM `user` WHERE `username`= '" + username + "' AND `password`='" + password + "'"));
+            DataRow[] findType = table.Select("type = '" + UserType + "'");
+
+            if (findType.Length != 0)
+            {
+                button_user.Hide();
+
+            }
+        }
+
     }
 }

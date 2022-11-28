@@ -17,7 +17,7 @@ namespace MegaVox.GUI
 {
     public partial class frmLogin : Form
     {
-        ClientDB client = new ClientDB();
+        UserDB user = new UserDB();
         public frmLogin()
         {
             InitializeComponent();
@@ -43,12 +43,15 @@ namespace MegaVox.GUI
             {
                 string username = textBox_username.Text;
                 string password = textBox_password.Text;
-                DataTable table = client.getList(new MySqlCommand("SELECT * FROM `user` WHERE `username`= '" + username + "' AND `password`='" + password + "'"));
+
+                DataTable table = user.getUserList(new MySqlCommand("SELECT * FROM `user` WHERE `username`= '" + username + "' AND `password`='" + password + "'"));
                 if (table.Rows.Count > 0)
                 {
-                    frmMain main = new frmMain();
+                    frmMain main = new frmMain(textBox_username.Text, textBox_password.Text);
                     this.Hide();
                     main.Show();
+
+
                 }
                 else
                 {

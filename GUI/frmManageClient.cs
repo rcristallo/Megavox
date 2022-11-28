@@ -20,10 +20,21 @@ namespace MegaVox.GUI
     public partial class frmManageClient : Form
     {
         ClientDB client = new ClientDB();
+        UserDB user = new UserDB();
 
         public frmManageClient()
         {
             InitializeComponent();
+        }
+
+        String username, password, userType;
+
+        public frmManageClient(string un, string pw, string ut)
+        {
+            InitializeComponent();
+            username = un;
+            password = pw;
+            userType = ut;
         }
 
         public void showTable()
@@ -75,6 +86,19 @@ namespace MegaVox.GUI
         private void frmManageClient_Load(object sender, EventArgs e)
         {
             showTable();
+            DataTable table = user.getUser(new MySqlCommand("SELECT `type` FROM `user` WHERE `username`= '" + username + "' AND `password`='" + password + "'"));
+            DataRow[] findType = table.Select("type = '" + userType + "'");
+
+            if (findType.Length != 0)
+            {
+                button_update.Enabled = false;
+                button_update.Visible = false;
+
+            }
+            else
+            {
+                button_update.Enabled = true;
+            }
         }
 
         private void button_clear_Click(object sender, EventArgs e)
