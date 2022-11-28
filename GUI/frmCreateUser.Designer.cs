@@ -107,7 +107,6 @@
             // 
             this.btn_update.BackColor = System.Drawing.Color.Transparent;
             this.btn_update.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_update.Enabled = false;
             this.btn_update.Font = new System.Drawing.Font("Arial Narrow", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_update.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btn_update.Location = new System.Drawing.Point(223, 218);
@@ -123,7 +122,6 @@
             // btn_delete
             // 
             this.btn_delete.BackColor = System.Drawing.Color.Transparent;
-            this.btn_delete.Enabled = false;
             this.btn_delete.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_delete.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btn_delete.Location = new System.Drawing.Point(415, 217);
@@ -205,6 +203,7 @@
             this.txtUserId.Location = new System.Drawing.Point(108, 21);
             this.txtUserId.Margin = new System.Windows.Forms.Padding(4);
             this.txtUserId.Name = "txtUserId";
+            this.txtUserId.ReadOnly = true;
             this.txtUserId.Size = new System.Drawing.Size(372, 26);
             this.txtUserId.TabIndex = 10;
             // 
