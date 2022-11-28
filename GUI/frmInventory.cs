@@ -92,9 +92,8 @@ namespace MegaVox.GUI
         {
             txtId.Text = grdInventory.CurrentRow.Cells[0].Value.ToString();
             txtName.Text = grdInventory.CurrentRow.Cells[1].Value.ToString();
-            txtDesc.Text = grdInventory.CurrentRow.Cells[2].Value.ToString();
-
-            txtPrice.Text = grdInventory.CurrentRow.Cells[3].Value.ToString();
+            txtPrice.Text = grdInventory.CurrentRow.Cells[2].Value.ToString();
+            txtDesc.Text = grdInventory.CurrentRow.Cells[3].Value.ToString();
         }
 
 
