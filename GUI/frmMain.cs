@@ -27,7 +27,7 @@ namespace MegaVox.GUI
             InitializeComponent();
             customizedDesign();
         }
-        String username, password;
+        String username, password, userType;
         public frmMain(string un, string pw)
         {
             InitializeComponent();
@@ -121,12 +121,12 @@ namespace MegaVox.GUI
 
         private void button_manageClient_Click(object sender, EventArgs e)
         {
-            openChildForm(new frmManageClient());
+            openChildForm(new frmManageClient(username, password, userType));
         }
 
         private void button_newInventory_Click(object sender, EventArgs e)
         {
-            openChildForm(new frmInventory());
+            openChildForm(new frmInventory(username, password, userType));
         }
 
         private void button_create_Click(object sender, EventArgs e)

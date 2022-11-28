@@ -13,16 +13,27 @@ using MegaVox.BLL;
 using MySql.Data.MySqlClient;
 using System.IO;
 using Google.Protobuf.WellKnownTypes;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 namespace MegaVox.GUI
 {
     public partial class frmInventory : Form
     {
         InventoryDB inventory = new InventoryDB();
+        UserDB user = new UserDB();
 
         public frmInventory()
         {
             InitializeComponent();
+        }
+        String username, password, userType;
+
+        public frmInventory(string un, string pw, string ut)
+        {
+            InitializeComponent();
+            username = un;
+            password = pw;
+            userType = ut;
         }
 
         bool verify()
@@ -44,6 +55,31 @@ namespace MegaVox.GUI
         private void frmInventory_Load(object sender, EventArgs e)
         {
             showTable();
+            string userType = "1";
+            DataTable table = user.getUser(new MySqlCommand("SELECT `type` FROM `user` WHERE `username`= '" + username + "' AND `password`='" + password + "'"));
+            DataRow[] findType = table.Select("type = '" + userType + "'");
+
+            if (findType.Length != 0)
+            {
+                btnAdd.Enabled = false;
+                btnAdd.Visible = false;
+                btnUpdate.Enabled = false;
+                btnUpdate.Visible = false;
+                btnDelete.Enabled = false;
+                btnDelete.Visible = false;
+                btnClear.Enabled = false;
+                btnClear.Visible = false;
+
+            }
+            else
+            {
+                btnAdd.Enabled = true;
+                btnUpdate.Enabled = true;
+                btnDelete.Enabled = true;
+                btnClear.Enabled = true;
+
+            }
+
         }
 
         private void buttonSearchCourse_Click(object sender, EventArgs e)

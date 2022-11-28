@@ -86,6 +86,7 @@ namespace MegaVox.GUI
         private void frmManageClient_Load(object sender, EventArgs e)
         {
             showTable();
+            string userType = "1";
             DataTable table = user.getUser(new MySqlCommand("SELECT `type` FROM `user` WHERE `username`= '" + username + "' AND `password`='" + password + "'"));
             DataRow[] findType = table.Select("type = '" + userType + "'");
 
