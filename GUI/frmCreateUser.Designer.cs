@@ -36,21 +36,21 @@
             this.btn_update = new System.Windows.Forms.Button();
             this.btn_delete = new System.Windows.Forms.Button();
             this.GroupBox1 = new System.Windows.Forms.GroupBox();
-            this.dtg_listUser = new System.Windows.Forms.DataGridView();
+            this.GrdUser = new System.Windows.Forms.DataGridView();
             this.ToolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.Panel1 = new System.Windows.Forms.Panel();
             this.grpCreateUser = new System.Windows.Forms.GroupBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtUserId = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.lblFirstName = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.cboType = new System.Windows.Forms.ComboBox();
+            this.lblUserId = new System.Windows.Forms.Label();
+            this.txtPassword = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtUserName = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.GroupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dtg_listUser)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GrdUser)).BeginInit();
             this.Panel1.SuspendLayout();
             this.grpCreateUser.SuspendLayout();
             this.SuspendLayout();
@@ -69,6 +69,7 @@
             this.btn_New.Text = "New";
             this.ToolTip1.SetToolTip(this.btn_New, "New");
             this.btn_New.UseVisualStyleBackColor = false;
+            this.btn_New.Click += new System.EventHandler(this.btn_New_Click);
             // 
             // btnClose
             // 
@@ -100,6 +101,7 @@
             this.btn_saveuser.Text = "Save";
             this.ToolTip1.SetToolTip(this.btn_saveuser, "Save Data");
             this.btn_saveuser.UseVisualStyleBackColor = false;
+            this.btn_saveuser.Click += new System.EventHandler(this.btn_saveuser_Click);
             // 
             // btn_update
             // 
@@ -131,11 +133,12 @@
             this.btn_delete.TabIndex = 32;
             this.btn_delete.Text = "Delete";
             this.btn_delete.UseVisualStyleBackColor = false;
+            this.btn_delete.Click += new System.EventHandler(this.btn_delete_Click);
             // 
             // GroupBox1
             // 
             this.GroupBox1.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.GroupBox1.Controls.Add(this.dtg_listUser);
+            this.GroupBox1.Controls.Add(this.GrdUser);
             this.GroupBox1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.GroupBox1.Location = new System.Drawing.Point(0, 257);
             this.GroupBox1.Margin = new System.Windows.Forms.Padding(4);
@@ -146,24 +149,25 @@
             this.GroupBox1.TabStop = false;
             this.GroupBox1.Text = "List Of Users";
             // 
-            // dtg_listUser
+            // GrdUser
             // 
-            this.dtg_listUser.AllowUserToAddRows = false;
-            this.dtg_listUser.AllowUserToDeleteRows = false;
-            this.dtg_listUser.AllowUserToResizeColumns = false;
-            this.dtg_listUser.AllowUserToResizeRows = false;
-            this.dtg_listUser.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dtg_listUser.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtg_listUser.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dtg_listUser.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
-            this.dtg_listUser.Location = new System.Drawing.Point(4, 19);
-            this.dtg_listUser.Margin = new System.Windows.Forms.Padding(4);
-            this.dtg_listUser.Name = "dtg_listUser";
-            this.dtg_listUser.RowHeadersVisible = false;
-            this.dtg_listUser.RowHeadersWidth = 51;
-            this.dtg_listUser.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dtg_listUser.Size = new System.Drawing.Size(996, 359);
-            this.dtg_listUser.TabIndex = 0;
+            this.GrdUser.AllowUserToAddRows = false;
+            this.GrdUser.AllowUserToDeleteRows = false;
+            this.GrdUser.AllowUserToResizeColumns = false;
+            this.GrdUser.AllowUserToResizeRows = false;
+            this.GrdUser.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.GrdUser.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.GrdUser.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.GrdUser.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
+            this.GrdUser.Location = new System.Drawing.Point(4, 19);
+            this.GrdUser.Margin = new System.Windows.Forms.Padding(4);
+            this.GrdUser.Name = "GrdUser";
+            this.GrdUser.RowHeadersVisible = false;
+            this.GrdUser.RowHeadersWidth = 51;
+            this.GrdUser.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.GrdUser.Size = new System.Drawing.Size(996, 359);
+            this.GrdUser.TabIndex = 0;
+            this.GrdUser.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.GrdUser_CellContentClick);
             // 
             // Panel1
             // 
@@ -179,14 +183,14 @@
             // 
             // grpCreateUser
             // 
-            this.grpCreateUser.Controls.Add(this.textBox1);
+            this.grpCreateUser.Controls.Add(this.txtUserId);
             this.grpCreateUser.Controls.Add(this.label1);
-            this.grpCreateUser.Controls.Add(this.comboBox1);
-            this.grpCreateUser.Controls.Add(this.lblFirstName);
-            this.grpCreateUser.Controls.Add(this.textBox2);
+            this.grpCreateUser.Controls.Add(this.cboType);
+            this.grpCreateUser.Controls.Add(this.lblUserId);
+            this.grpCreateUser.Controls.Add(this.txtPassword);
             this.grpCreateUser.Controls.Add(this.label6);
             this.grpCreateUser.Controls.Add(this.label7);
-            this.grpCreateUser.Controls.Add(this.textBox3);
+            this.grpCreateUser.Controls.Add(this.txtUserName);
             this.grpCreateUser.Controls.Add(this.label8);
             this.grpCreateUser.Location = new System.Drawing.Point(12, 12);
             this.grpCreateUser.Name = "grpCreateUser";
@@ -195,14 +199,14 @@
             this.grpCreateUser.TabStop = false;
             this.grpCreateUser.Text = "Create User";
             // 
-            // textBox1
+            // txtUserId
             // 
-            this.textBox1.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(108, 21);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(372, 26);
-            this.textBox1.TabIndex = 10;
+            this.txtUserId.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUserId.Location = new System.Drawing.Point(108, 21);
+            this.txtUserId.Margin = new System.Windows.Forms.Padding(4);
+            this.txtUserId.Name = "txtUserId";
+            this.txtUserId.Size = new System.Drawing.Size(372, 26);
+            this.txtUserId.TabIndex = 10;
             // 
             // label1
             // 
@@ -216,42 +220,42 @@
             this.label1.Text = "id";
             this.label1.Visible = false;
             // 
-            // comboBox1
+            // cboType
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.cboType.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cboType.FormattingEnabled = true;
+            this.cboType.Items.AddRange(new object[] {
             "Administrator",
             "Staff"});
-            this.comboBox1.Location = new System.Drawing.Point(108, 136);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(372, 28);
-            this.comboBox1.TabIndex = 14;
-            this.comboBox1.Text = "Administrator";
+            this.cboType.Location = new System.Drawing.Point(108, 136);
+            this.cboType.Margin = new System.Windows.Forms.Padding(4);
+            this.cboType.Name = "cboType";
+            this.cboType.Size = new System.Drawing.Size(372, 28);
+            this.cboType.TabIndex = 14;
+            this.cboType.Text = "Administrator";
             // 
-            // lblFirstName
+            // lblUserId
             // 
-            this.lblFirstName.AutoSize = true;
-            this.lblFirstName.BackColor = System.Drawing.Color.White;
-            this.lblFirstName.Font = new System.Drawing.Font("Arial Narrow", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFirstName.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.lblFirstName.Location = new System.Drawing.Point(17, 25);
-            this.lblFirstName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblFirstName.Name = "lblFirstName";
-            this.lblFirstName.Size = new System.Drawing.Size(80, 22);
-            this.lblFirstName.TabIndex = 12;
-            this.lblFirstName.Text = "Full Name:";
+            this.lblUserId.AutoSize = true;
+            this.lblUserId.BackColor = System.Drawing.Color.White;
+            this.lblUserId.Font = new System.Drawing.Font("Arial Narrow", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUserId.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.lblUserId.Location = new System.Drawing.Point(41, 25);
+            this.lblUserId.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblUserId.Name = "lblUserId";
+            this.lblUserId.Size = new System.Drawing.Size(59, 22);
+            this.lblUserId.TabIndex = 12;
+            this.lblUserId.Text = "User Id:";
             // 
-            // textBox2
+            // txtPassword
             // 
-            this.textBox2.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(108, 99);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(372, 26);
-            this.textBox2.TabIndex = 13;
-            this.textBox2.UseSystemPasswordChar = true;
+            this.txtPassword.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPassword.Location = new System.Drawing.Point(108, 99);
+            this.txtPassword.Margin = new System.Windows.Forms.Padding(4);
+            this.txtPassword.Name = "txtPassword";
+            this.txtPassword.Size = new System.Drawing.Size(372, 26);
+            this.txtPassword.TabIndex = 13;
+            this.txtPassword.UseSystemPasswordChar = true;
             // 
             // label6
             // 
@@ -281,14 +285,14 @@
             this.label7.TabIndex = 17;
             this.label7.Text = "Type :";
             // 
-            // textBox3
+            // txtUserName
             // 
-            this.textBox3.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(108, 62);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(372, 26);
-            this.textBox3.TabIndex = 11;
+            this.txtUserName.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUserName.Location = new System.Drawing.Point(108, 62);
+            this.txtUserName.Margin = new System.Windows.Forms.Padding(4);
+            this.txtUserName.Name = "txtUserName";
+            this.txtUserName.Size = new System.Drawing.Size(372, 26);
+            this.txtUserName.TabIndex = 11;
             // 
             // label8
             // 
@@ -318,8 +322,9 @@
             this.Controls.Add(this.Panel1);
             this.Name = "frmCreateUser";
             this.Text = "Megavox : Create User";
+            this.Load += new System.EventHandler(this.frmCreateUser_Load);
             this.GroupBox1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dtg_listUser)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GrdUser)).EndInit();
             this.Panel1.ResumeLayout(false);
             this.grpCreateUser.ResumeLayout(false);
             this.grpCreateUser.PerformLayout();
@@ -336,17 +341,17 @@
         internal System.Windows.Forms.Button btn_update;
         internal System.Windows.Forms.Button btn_delete;
         internal System.Windows.Forms.GroupBox GroupBox1;
-        internal System.Windows.Forms.DataGridView dtg_listUser;
+        internal System.Windows.Forms.DataGridView GrdUser;
         internal System.Windows.Forms.Panel Panel1;
         private System.Windows.Forms.GroupBox grpCreateUser;
-        internal System.Windows.Forms.TextBox textBox1;
-        internal System.Windows.Forms.Label label1;
-        internal System.Windows.Forms.ComboBox comboBox1;
-        internal System.Windows.Forms.Label lblFirstName;
-        internal System.Windows.Forms.TextBox textBox2;
+        internal System.Windows.Forms.ComboBox cboType;
+        internal System.Windows.Forms.TextBox txtPassword;
         internal System.Windows.Forms.Label label6;
         internal System.Windows.Forms.Label label7;
-        internal System.Windows.Forms.TextBox textBox3;
+        internal System.Windows.Forms.TextBox txtUserName;
         internal System.Windows.Forms.Label label8;
+        internal System.Windows.Forms.TextBox txtUserId;
+        internal System.Windows.Forms.Label label1;
+        internal System.Windows.Forms.Label lblUserId;
     }
 }
