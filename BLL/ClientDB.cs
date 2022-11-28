@@ -60,9 +60,9 @@ namespace MegaVox.BLL
             return table;
         }
 
-        public bool updateClient(int id, string fname, string lname, DateTime bdate, string gender, string phone, string address, byte[] img)
+        public bool updateClient(int id,string fname, string lname, DateTime bdate, string gender, string phone, string address, byte[] img)
         {
-            MySqlCommand cmdUpdate = new MySqlCommand("UPDATE `client` SET `CFirstName`=@fn,`CLastName`=@ln,`Birthdate`=@bd,`Gender`=@gd,`Phone`=@ph,`Address`=@adr,`Photo`=@img WHERE  `StdId`= @id", connect.getconnection);
+            MySqlCommand cmdUpdate = new MySqlCommand("UPDATE `client` SET `CFirstName`=@fn,`CLastName`=@ln,`Birthdate`=@bd,`Gender`=@gd,`Phone`=@ph,`Address`=@adr,`Photo`=@img WHERE  `CId`= @id", connect.getconnection);
             cmdUpdate.Parameters.Add("@id", MySqlDbType.Int32).Value = id;
             cmdUpdate.Parameters.Add("@fn", MySqlDbType.VarChar).Value = fname;
             cmdUpdate.Parameters.Add("@ln", MySqlDbType.VarChar).Value = lname;

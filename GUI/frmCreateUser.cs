@@ -101,14 +101,6 @@ namespace MegaVox.GUI
 
         }
 
-        private void GrdUser_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-            txtUserId.Text = GrdUser.CurrentRow.Cells[0].Value.ToString();
-            txtUserName.Text = GrdUser.CurrentRow.Cells[1].Value.ToString();
-            txtPassword.Text = GrdUser.CurrentRow.Cells[2].Value.ToString();
-            cboType.SelectedItem = GrdUser.CurrentRow.Cells[3].Value.ToString();
-        }
-
         private void btn_delete_Click(object sender, EventArgs e)
         {
             int userid = Convert.ToInt32(txtUserId.Text);
@@ -121,6 +113,14 @@ namespace MegaVox.GUI
                     btnClose.PerformClick();
                 }
             }
+        }
+
+        private void GrdUser_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            txtUserId.Text = GrdUser.CurrentRow.Cells[0].Value.ToString();
+            txtUserName.Text = GrdUser.CurrentRow.Cells[1].Value.ToString();
+            txtPassword.Text = GrdUser.CurrentRow.Cells[2].Value.ToString();
+            cboType.SelectedItem = GrdUser.CurrentRow.Cells[3].Value.ToString();
         }
     }
 }
